@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      GeoData
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-label>Continente</ion-label>
+  <ion-select [(ngModel)]="regiao" interface="popover">
+    <ion-option [value]="todos" selected="true">Todos</ion-option>
+    <ion-option [value]="africa">Africa</ion-option>
+    <ion-option [value]="americas">Americas</ion-option>
+    <ion-option [value]="asia">Asia</ion-option>
+    <ion-option [value]="europe">Europe</ion-option>
+    <ion-option [value]="oceania">Oceania</ion-option>
+  </ion-select>
+
+  <button ion-button (click)="submit()">Buscar</button>
 </ion-content>

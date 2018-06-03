@@ -1,0 +1,38 @@
+<!--
+  Generated template for the ListaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <!-- <ion-title>Geodata - {{paises[0].region}}</ion-title> -->
+    <ion-title>Geodata</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<!-- <ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let pais of paises" (click)="visualizarPais(pais)">
+      <ion-avatar item-start>
+        <img src="../../assets/temp/{{pais.alpha3Code.toLowerCase()}}.png">
+      </ion-avatar>
+      <h2>{{pais.name}}</h2>
+      <p>Continente: {{pais.region}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content> -->
+<ion-content padding>
+    <ion-list>
+      <ion-item (click)="visualizarPais()">
+        <ion-avatar item-start>
+          <img src="../../assets/temp/bra.png">
+        </ion-avatar>
+        <h2>Brasil</h2>
+        <p>Continente: Americas</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
