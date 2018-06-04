@@ -11,6 +11,10 @@ import { PaisPageModule } from '../pages/pais/pais.module';
 import { PaisProvider } from '../providers/pais/pais';
 import { HttpModule } from '@angular/http';
 
+import {SQLite} from '@ionic-native/sqlite'
+import { DatabaseProvider } from '../providers/database/database';
+import { PaisDbProvider } from '../providers/pais-db/pais-db';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -32,7 +36,10 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PaisProvider
+    PaisProvider,
+    SQLite,
+    DatabaseProvider,
+    PaisDbProvider
   ]
 })
 export class AppModule {}

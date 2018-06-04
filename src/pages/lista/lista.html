@@ -17,7 +17,7 @@
   <ion-list>
     <ion-item *ngFor="let pais of paises" (click)="visualizarPais(pais)">
       <ion-avatar item-start>
-        <img src="../../assets/temp/{{pais.alpha3Code.toLowerCase()}}.png">
+        <img src="assets/imgs/{{pais.alpha3Code.toLowerCase()}}.png">
       </ion-avatar>
       <h2>{{pais.name}}</h2>
       <p>Continente: {{pais.region}}</p>
